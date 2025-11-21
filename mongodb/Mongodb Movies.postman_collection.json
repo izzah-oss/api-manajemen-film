@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "974e38db-6742-471a-99c0-81ad2fe3fb2b",
+		"name": "Mongodb Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47947605"
+	},
+	"item": [
+		{
+			"name": "movies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"NEW\",\r\n    \"director\": \"Christopher Nolan\",\r\n    \"year\": 2007\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3300/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"NEW\",\r\n    \"director\": \"Christopher Nolan\",\r\n    \"year\": 2008\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3300/movies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/movies/68f89aaf19ea05242e0ab2dd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"movies",
+						"68f89aaf19ea05242e0ab2dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "directors",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "directors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/directors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "directors ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "directors",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "directors",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
